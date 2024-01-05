@@ -21,12 +21,7 @@
 
 ### dagshub
 
-[dagshub](https://dagshub.com/)
-
-MLFLOW_TRACKING_URI=https://dagshub.com/Saurabh7Goku/END_TO_END-Chest-Cancer-Detection-using-MlFLow-DVC.mlflow \
-MLFLOW_TRACKING_USERNAME=Saurabh7Goku \
-MLFLOW_TRACKING_PASSWORD=aad0cf5fdcb4d2432f6bed11a0e9541ad4fa7cee \
-python script.py
+[dagshub official Website](https://dagshub.com/)
 
 Run this to export as env variables:
 
