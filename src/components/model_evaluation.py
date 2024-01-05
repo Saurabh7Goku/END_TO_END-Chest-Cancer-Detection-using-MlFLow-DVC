@@ -3,9 +3,8 @@ from pathlib import Path
 import mlflow
 import mlflow.keras
 from urllib.parse import urlparse
-from src.cnnClassifier.utils.common import save_json
-from src.cnnClassifier.entity.config_entity import EvaluationConfig
-
+from src.entity.config_entity import EvaluationConfig
+from src.utils.common import save_json
 
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
@@ -57,14 +56,11 @@ class Evaluation:
         mlflow.set_registry_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
-        # mlflow.models.infer_signature()
-
         with mlflow.start_run():
             mlflow.log_params(self.config.all_params)
             mlflow.log_metrics(
                 {"loss": self.score[0], "accuracy": self.score[1]}
             )
-            mlflow.keras.autolog()
             
             # Model registry does not work with file store
             if tracking_url_type_store != "file":
@@ -75,4 +71,4 @@ class Evaluation:
                 
                 mlflow.keras.log_model(self.model, "model", registered_model_name="ResNet50v2")
             else:
-                mlflow.keras.log_model(self.model, "model", registered_model_name="ResNet50v2")
+                mlflow.keras.log_model(self.model, "model")

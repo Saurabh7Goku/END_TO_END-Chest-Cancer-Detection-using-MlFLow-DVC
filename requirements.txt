@@ -1,4 +1,4 @@
-# tensorflow==2.13.0
+tensorflow
 pandas 
 gdown
 dvc

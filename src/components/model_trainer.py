@@ -3,7 +3,7 @@ import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-from src.cnnClassifier.entity.config_entity import TrainingConfig
+from src.entity.config_entity import TrainingConfig
 from pathlib import Path
 
 
