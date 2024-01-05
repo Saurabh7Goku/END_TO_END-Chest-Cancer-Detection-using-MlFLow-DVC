@@ -38,7 +38,7 @@ Run this to export as env variables:
 
     export MLFLOW_TRACKING_USERNAME=Saurabh7Goku
 
-    export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9353c5b10041d5c8edbcef0
+    export MLFLOW_TRACKING_PASSWORD=🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈
 
 ```
 
