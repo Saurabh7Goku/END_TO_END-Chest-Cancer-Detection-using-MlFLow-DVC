@@ -56,3 +56,10 @@ DVC
 - Its very lite weight for POC only
 - lite weight expriements tracker
 - It can perform Orchestration (Creating Pipelines)
+
+
+
+MLFLOW_TRACKING_URI=https://dagshub.com/Saurabh7Goku/END_TO_END-Chest-Cancer-Detection-using-MlFLow-DVC.mlflow \
+MLFLOW_TRACKING_USERNAME=Saurabh7Goku \
+MLFLOW_TRACKING_PASSWORD=aad0cf5fdcb4d2432f6bed11a0e9541ad4fa7cee \
+python script.py
