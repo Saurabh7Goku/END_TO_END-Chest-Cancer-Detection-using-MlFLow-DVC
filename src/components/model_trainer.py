@@ -67,8 +67,12 @@ class Training:
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
 
-
-
+    def save_trained_model(self):
+        model_folder = Path("model")
+        model_folder.mkdir(exist_ok=True)
+        model_path = model_folder / "model.h5"
+        self.save_model(model_path, self.model)
+        # print(f"Trained model saved to {model_path}")
     
     def train(self):
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
@@ -86,3 +90,5 @@ class Training:
             path=self.config.trained_model_path,
             model=self.model
         )
+
+        self.save_trained_model()
