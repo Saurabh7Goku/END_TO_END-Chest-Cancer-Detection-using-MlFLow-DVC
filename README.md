@@ -33,7 +33,7 @@ Run this to export as env variables:
 
     export MLFLOW_TRACKING_USERNAME=Saurabh7Goku
 
-    export MLFLOW_TRACKING_PASSWORD=🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈
+    export MLFLOW_TRACKING_PASSWORD=🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈🙈MLFLOW_TRACKING_PASSWORD=aad0cf5fdcb4d2432f6bed11a0e9541ad4fa7cee
 
 ```
 
@@ -90,7 +90,7 @@ DVC
 
 ## 3. Create ECR repo to store/save docker image
 
-    - Save the URI: 259588875913.dkr.ecr.eu-north-1.amazonaws.com/chest_cancer_classifier
+    - Save the URI: 259588875913.dkr.ecr.ap-south-1.amazonaws.com/chest_cancer_classifier
 
 ## 4. Create EC2 machine (Ubuntu)
 
